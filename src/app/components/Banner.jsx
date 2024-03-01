@@ -31,7 +31,7 @@ const BannerCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem 5%;
+  margin: 8rem 5%;
   & > div {
     backdrop-filter: blur(3px);
     background: transparent;
