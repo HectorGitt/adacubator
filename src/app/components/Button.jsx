@@ -12,9 +12,10 @@ const Button = ({text}) => {
 export default Button
 
 const ButtonCont = styled.button`
-    padding: 10px 20px;
+    padding: 14px 28px;
+    font-size: 1.2rem;
     background: linear-gradient(107.64deg, #0098DA -4.02%, #91D8F7 82.79%);
     border: none;
-    border-radius: 15px;
+    border-radius: 21px;
     color: white;
 `
