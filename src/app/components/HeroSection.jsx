@@ -8,14 +8,14 @@ import Button from './Button';
 const HeroSection = () => {
   return (
     <Hero>
-        <div>
+        <div data-aos='fade-left' data-aos-delay={200}>
             <h1>
             <span className='welcome'>Welcome to Adacubator</span><br/>
-            Your Gateway to success on <span className='cardano'>Cardano</span>
+            Your Gateway to success on <span className='waivy'>Cardano</span>
             </h1>
             <Button text={'Contact Us'} />
         </div>
-        <div className='image-cont'>
+        <div data-aos='fade-right' data-aos-delay={400} className='image-cont'>
             <Image src={hero} layout='responsive' />
         </div>
         <span className='circle'></span>
@@ -35,6 +35,13 @@ const Hero = styled.div`
     h1 {
         font-size: 3rem;
         font-weight: 700;
+        .welcome {
+            font-size: 1.5rem;
+            background: linear-gradient(107.64deg, #0098DA -4.02%, #91D8F7 82.79%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
     button {
         align-self: flex-start;
@@ -47,15 +54,6 @@ const Hero = styled.div`
         width: 100%;
         margin: 0 4rem;
         z-index: 2;
-    }
-    .welcome, .cardano {
-        background: linear-gradient(107.64deg, #0098DA -4.02%, #91D8F7 82.79%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .welcome {
-        font-size: 1.5rem;
     }
     @media screen and (${device.md}) {
       margin: 0 10px;

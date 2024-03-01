@@ -3,9 +3,9 @@ import React from 'react'
 import styled from 'styled-components'
 import cardBox from '../../../public/card_box.png'
 
-const Card = ({title, icon, text}) => {
+const Card = ({title, icon, text, dataAos}) => {
   return (
-    <CardCont>
+    <CardCont data-aos={dataAos}>
         <Image className='icon' src={icon} />
         <h3 className='waivy'>{title}</h3>
         <p>{text}</p>

@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <FooterCont>
       <div className="footer">
-        <div className="footer-left">
+        <div data-aos-offset={0} data-aos='fade-right' className="footer-left">
         <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
         <FaFacebookF className="icon1" />
         <FaInstagram className="icon1"/>
@@ -24,7 +24,7 @@ const Footer = () => {
 
 
         </div>
-        <div className="footer-right">
+        <div data-aos-offset={0} data-aos='fade-left' className="footer-right">
             <h3 className="waivy">Quick Links</h3>
             <ul className="list">
                 <li>About Us</li>
@@ -36,8 +36,7 @@ const Footer = () => {
             </ul>
         </div>
         </div>
-        <div className="line">
-
+        <div data-aos-offset={0} data-aos='zoom-in' className="line">
         </div>
         <p data-aos-offset={0} data-aos='zoom-in'>&copy; 2024.All rights reserved</p>
     </FooterCont>

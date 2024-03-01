@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = ({text}) => {
+const Button = ({text, dataAos}) => {
   return (
-    <ButtonCont>
+    <ButtonCont data-aos={dataAos}>
       {text}
     </ButtonCont>
     )

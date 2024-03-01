@@ -16,8 +16,8 @@ const Nav = () => {
     setNav(false);
   };
   return (
-    <NavBar>
-        <nav>
+    <NavBar >
+        <nav data-aos='zoom-in'>
           <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
             <ul className='navlist-pc'>
                 <li><a href='#about'>About</a></li>
@@ -48,7 +48,7 @@ const Nav = () => {
                 {/* <MainButton target to='/buy' text='Buy CGI' /> */}
             </div>  
         </nav>
-        <hr />
+        <hr data-aos='zoom-in' />
     </NavBar>
   )
 }
@@ -73,6 +73,9 @@ const NavBar = styled.nav`
         align-items: center;
         padding: 1rem 1%;
         width: 90%;
+    }
+    hr {
+        height: 1px;
     }
     ul {
         display: flex;

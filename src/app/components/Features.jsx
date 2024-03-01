@@ -10,12 +10,12 @@ import Image from 'next/image'
 
 const Features = () => {
   return (
-    <FeaturesCont>
-        <h1>Why <span className='waivy'>Adacubator</span> ?</h1>
+    <FeaturesCont >
+        <h1 data-aos='zoom-in'>Why <span className='waivy'>Adacubator</span> ?</h1>
         <div>
-            <Card title='Capital Support' icon={support} text='We provide the financial backing needed to take your project from concept to reality, helping you overcome any financial barriers to entry'/>
-            <Card title='Ecosystem Growth' icon={growth} text='By focusing exclusively on the Cardano blockchain, we aim to cultivate a thriving ecosystem of innovative solutions and applications.'/>
-            <Card title='Community Connection' icon={connection} text='Join a network of like-minded developers, entrepreneurs, and enthusiasts all working towards the common goal of advancing the Cardano ecosystem.'/>
+            <Card dataAos='fade-right' title='Capital Support' icon={support} text='We provide the financial backing needed to take your project from concept to reality, helping you overcome any financial barriers to entry'/>
+            <Card dataAos='fade-up' title='Ecosystem Growth' icon={growth} text='By focusing exclusively on the Cardano blockchain, we aim to cultivate a thriving ecosystem of innovative solutions and applications.'/>
+            <Card dataAos='fade-left' title='Community Connection' icon={connection} text='Join a network of like-minded developers, entrepreneurs, and enthusiasts all working towards the common goal of advancing the Cardano ecosystem.'/>
         </div>
         <Image className="line" src={line} />
 

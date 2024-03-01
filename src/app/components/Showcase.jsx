@@ -3,10 +3,10 @@ import styled from 'styled-components'
 const Showcase = () => {
   return (
     <ShowcaseCont>
-        <h2>
+      <h2 data-aos='zoom-in'>
             Let&ldquo;s <span className='waivy'>Accelerate</span> Your Success <br/>on <span className='waivy'>Cardano</span>
         </h2>
-        <p>For inquiries, partnership opportunities, or to submit your project for consideration<br/>please contact us at <a className='waivy' href='mailto:info@aducubator.com'>info@aducubator.com</a></p>
+        <p data-aos='fade-up'>For inquiries, partnership opportunities, or to submit your project for consideration<br/>please contact us at <a className='waivy' href='mailto:info@aducubator.com'>info@aducubator.com</a></p>
     </ShowcaseCont>
   )
 }
