@@ -17,7 +17,7 @@ const Nav = () => {
   };
   return (
     <NavBar >
-        <nav data-aos='zoom-in'>
+        <nav>
           <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
             <ul className='navlist-pc'>
                 <li><a href='#about'>About</a></li>
@@ -73,6 +73,7 @@ const NavBar = styled.nav`
         align-items: center;
         padding: 1rem 1%;
         width: 90%;
+        z-index: 100;
     }
     hr {
         height: 1px;
