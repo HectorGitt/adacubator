@@ -17,9 +17,10 @@ export default Showcase
 const ShowcaseCont = styled.div`
   position: relative;
   text-align: center;
-  min-height: 50vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   h2 {
     font-size: 2rem;
     font-weight: 700;
