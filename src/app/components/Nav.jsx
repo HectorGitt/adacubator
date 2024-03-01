@@ -32,7 +32,7 @@ const Nav = () => {
 
             <div className={nav? 'navlist navlist-mobile': 'navlist'}>
                 <div className='top-mobile'>
-                    <Image alt='CardanoGPT logo' src={logo}/>
+                    <Image alt='adacubator logo' src={logo}/>
                     <IoCloseCircleOutline onClick={closeNav} 
                     className='menu-button-mobile' id='menu' size='4rem' />
                 </div>
@@ -98,7 +98,7 @@ const NavBar = styled.nav`
         z-index: 100;
         padding: 2%;
         ul{
-            width: 100%;
+            width: 90%;
             display: flex;
             flex-direction: column;
             text-align: start;
@@ -123,6 +123,7 @@ const NavBar = styled.nav`
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        padding: 0 5%;
     }
     @media screen and (${device.md}) {
         .navlist-pc, button {
