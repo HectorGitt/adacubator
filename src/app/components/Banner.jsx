@@ -4,19 +4,21 @@ import { device } from "../lib/breakpoint"
 import rocket from '../../../public/rocket.png'
 import wavelines from '../../../public/wavelines.svg'
 import Button from "./Button"
+import borderBox from '../../../public/banner_border.svg'
 
 const Banner = () => {
   return (
     <BannerCont>
       <div>
-        <h2>Pitch to <span className="waivy">Us</span></h2>
-        <p>If you're building a project on Cardano and believe in making a difference, AdaCubator is your ideal partner. Together, we can push the boundaries of what's possible and shape the future of blockchain technology.</p>
-        <Button text='Join Us' />
+        <h2 data-aos='zoom-in'>Pitch to <span className="waivy">Us</span></h2>
+        <p data-aos='fade-up'>If you're building a project on Cardano and believe in making a difference, AdaCubator is your ideal partner. Together, we can push the boundaries of what's possible and shape the future of blockchain technology.</p>
+        <Button dataAos='fade-up' text='Join Us' />
         <div className="banner-img-cont">
-          <Image className="banner-img" src={rocket} alt='rocket' layout="responsive" />
+        <Image data-aos='fade-up' data-aos-delay={500} className="banner-img" src={rocket} alt='rocket' layout="responsive" />
         </div>
       </div>
-      <Image className="wavelines" src={wavelines} />
+      <Image data-aos='fade-up' className="wavelines" src={wavelines} />
+      <Image data-aos='fade-up' className="banner-border" src={borderBox} />
     </BannerCont>
   )
 }
