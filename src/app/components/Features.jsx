@@ -49,9 +49,17 @@ const FeaturesCont = styled.div`
         gap: 2rem;
     }
 
-    @media screen and (${device.md}) {
+    @media screen and (${device.sm}) {
+      & > div {
+        gap: 1rem;
+      }
+    }
+
+    @media screen and (${device.sm}) {
+      
       & > div {
         flex-direction: column;
-    }
+        align-items: center;
+      }
     }
 `

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
 import cardBox from '../../../public/card_box.png'
+import { device } from '../lib/breakpoint'
 
 const Card = ({title, icon, text, dataAos}) => {
   return (
@@ -43,5 +44,8 @@ const CardCont = styled.div`
       width: 100%;
       height: 100%;
       
+    }
+    @media screen and (${device.md}) {
+      padding:0 0.5rem;
     }
 `
