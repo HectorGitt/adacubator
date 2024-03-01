@@ -16,6 +16,7 @@ const FlexSection = ({text, imgSrc, imgAlt, alternate, children}) => {
         <div data-aos={alternate? 'fade-up-right':'fade-up-left'} className='image-cont'>
             <Image className='image' src={imgSrc} width={480} height={270} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={imgAlt} />
         </div>
+        <span className='circle'></span>
     </Flex>
   )
 }
@@ -28,6 +29,7 @@ const Flex = styled.div`
     align-items: center;
     padding: 3rem 0;
     gap: 3rem;
+    position: relative;
     h1 {
         font-size: 3rem;
         font-weight: 700;
@@ -42,13 +44,23 @@ const Flex = styled.div`
     }
     &.alternate {
         flex-direction: row-reverse;
+        .circle {
+          left: 90%;
+          top: -20%;
+        }
     }
 
     p {
-      color: #c0c0c0cd;
+      color: #dadada;
       .white {
         color: white;
       }
+    }
+
+    .line {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
     
 
