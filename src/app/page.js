@@ -10,8 +10,17 @@ import FlexSection from "./components/FlexSection";
 import second from "../../public/second.png";
 import Footer from "./components/Footer";
 import line from '../../public/lines.svg'
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+    });
+    AOS.refresh();
+  }, [])
   return (
     <Main>
       <Nav/> 
