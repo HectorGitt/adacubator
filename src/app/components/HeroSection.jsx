@@ -44,7 +44,7 @@ const Hero = styled.div`
         }
     }
     button {
-        align-self: flex-start;
+        align-self: center;
     }
     & > div {
         display: flex;
