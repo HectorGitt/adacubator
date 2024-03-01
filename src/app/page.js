@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Nav from "./components/Nav";
 import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Nav/>
       <HeroSection />
       <Features/>
+      <Footer/>
     </Main>
   );
 }
