@@ -1,11 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
+import cardBox from '../../../public/card_box.png'
 
-const Card = ({title, text}) => {
+const Card = ({title, icon, text}) => {
   return (
     <CardCont>
-        <h3>{title}</h3>
+        <Image className='icon' src={icon} />
+        <h3 className='waivy'>{title}</h3>
         <p>{text}</p>
+        <Image className='card-image' src={cardBox} />
     </CardCont>
   )
 }
@@ -16,16 +20,28 @@ const CardCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid;
-    padding: 2rem;
-    max-width: 300px;
-    
-    border-image: linear-gradient(107.64deg, #0098DA -4.02%, #91D8F7 82.79%);
-    background: transparent;
+    justify-content: space-evenly;
+    padding:0 2rem;
+    max-width: 400px;
+    min-height: 250px;
+    position: relative;
+    background-color:#11264b ;
+    .icon {
+      width: 3rem;
+      height: auto;
+    }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     p {
-        color: #c0c0c0cd;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .card-image {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      
     }
 `
