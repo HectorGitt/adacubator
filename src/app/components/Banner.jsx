@@ -2,6 +2,7 @@ import Image from "next/image"
 import styled from "styled-components"
 import { device } from "../lib/breakpoint"
 import rocket from '../../../public/rocket.png'
+import wavelines from '../../../public/wavelines.svg'
 import Button from "./Button"
 
 const Banner = () => {
@@ -15,6 +16,7 @@ const Banner = () => {
           <Image className="banner-img" src={rocket} alt='rocket' layout="responsive" />
         </div>
       </div>
+      <Image className="wavelines" src={wavelines} />
     </BannerCont>
   )
 }
@@ -22,12 +24,16 @@ const Banner = () => {
 export default Banner
 
 const BannerCont = styled.div`
+  position: relative;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  margin: 3rem 0;
   & > div {
+    backdrop-filter: blur(3px);
+    background: transparent;
     margin: 0 5%;
     border-radius: 2rem;
     border: 2px solid #0098DA;
@@ -37,9 +43,11 @@ const BannerCont = styled.div`
     justify-content: center;
     padding: 2rem;
     min-height: 400px;
+    z-index: 2;
     p {
       max-width: 50%;
       margin: 1rem 0;
+      z-index: 1;
     }
     button {
       align-self: self-start;
@@ -49,6 +57,16 @@ const BannerCont = styled.div`
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+  .wavelines {
+    position: absolute;
+    top: -50%;
+    z-index: 1;
+  }
+  @media screen and (${device.md}) {
+      & > div p {
+        max-width: 100%;
+      }
   }
     
 `
