@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="line">
 
         </div>
-        <p>© 2024.All rights reserved</p>
+        <p data-aos-offset={0} data-aos='zoom-in'>&copy; 2024.All rights reserved</p>
     </FooterCont>
   )
 }
