@@ -25,25 +25,21 @@ export default Banner
 
 const BannerCont = styled.div`
   position: relative;
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
-  margin: 3rem 0;
+  margin: 3rem 8rem;
   & > div {
     backdrop-filter: blur(3px);
     background: transparent;
-    margin: 0 5%;
-    border-radius: 2rem;
-    border: 2px solid #0098DA;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
     min-height: 400px;
-    z-index: 2;
+    z-index: 3;
     p {
       max-width: 50%;
       margin: 1rem 0;
@@ -52,6 +48,9 @@ const BannerCont = styled.div`
     button {
       align-self: self-start;
     }
+  }
+  h2 {
+    font-size: 2.5rem;
   }
   .banner-img-cont {
     position: absolute;
@@ -62,6 +61,13 @@ const BannerCont = styled.div`
     position: absolute;
     top: -50%;
     z-index: 1;
+  }
+  .banner-border {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
   }
   @media screen and (${device.md}) {
       & > div p {
