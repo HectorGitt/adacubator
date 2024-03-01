@@ -8,7 +8,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background: #13294E;
+  background: #102242;
   color: white;
 }
 
@@ -21,4 +21,16 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.circle{
+  position: absolute;
+  left: 10%;
+  width: 100px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(107.64deg, #4e9aba -4.02%, #017aae 82.79%);
+  filter: blur(100px);
+  transform: translate(-50%, 30%);
+  z-index: 1;
 }
