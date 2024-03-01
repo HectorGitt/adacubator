@@ -14,7 +14,7 @@ const FlexSection = ({text, imgSrc, imgAlt, alternate, children}) => {
             </p>
         </div>
         <div data-aos={alternate? 'fade-up-right':'fade-up-left'} className='image-cont'>
-            <Image className='image' src={imgSrc} width={480} height={270} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={imgAlt} />
+            <Image className='image' src={imgSrc} alt={imgAlt} />
         </div>
         <span className='circle'></span>
     </Flex>
@@ -41,6 +41,7 @@ const Flex = styled.div`
         max-width: 650px;
         width: 100%;
         margin: 0 4rem;
+        flex: 1;
     }
     &.alternate {
         flex-direction: row-reverse;
@@ -62,7 +63,10 @@ const Flex = styled.div`
       top: 0;
       right: 0;
     }
-    
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
 
     @media screen and (${device.md}) {
       margin: 0 10px;
