@@ -8,6 +8,7 @@ import Showcase from "./components/Showcase";
 import Banner from "./components/Banner";
 import FlexSection from "./components/FlexSection";
 import second from "../../public/second.png";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Features/>
       <Banner />
       <Showcase />
+      <Footer/>
     </Main>
   );
 }
