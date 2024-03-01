@@ -8,6 +8,7 @@ import Showcase from "./components/Showcase";
 import Banner from "./components/Banner";
 import FlexSection from "./components/FlexSection";
 import second from "../../public/second.png";
+import third from "../../public/third.png";
 import Footer from "./components/Footer";
 import line from '../../public/lines.svg'
 import AOS from "aos";
