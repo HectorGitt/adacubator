@@ -6,7 +6,7 @@ const Showcase = () => {
         <h2>
             Let&ldquo;s <span className='waivy'>Accelerate</span> Your Success <br/>on <span className='waivy'>Cardano</span>
         </h2>
-        <p>For inquiries, partnership opportunities, or to submit your project for consideration<br/>please contact us at <a href='mailto:info@aducubator.com'>info@aducubator.com</a></p>
+        <p>For inquiries, partnership opportunities, or to submit your project for consideration<br/>please contact us at <a className='waivy' href='mailto:info@aducubator.com'>info@aducubator.com</a></p>
     </ShowcaseCont>
   )
 }
