@@ -31,7 +31,7 @@ const BannerCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem 8rem;
+  margin: 3rem 5%;
   & > div {
     backdrop-filter: blur(3px);
     background: transparent;
@@ -41,7 +41,6 @@ const BannerCont = styled.div`
     justify-content: center;
     padding: 2rem;
     min-height: 400px;
-    z-index: 3;
     p {
       max-width: 50%;
       margin: 1rem 0;
@@ -49,6 +48,7 @@ const BannerCont = styled.div`
     }
     button {
       align-self: self-start;
+      z-index: 1;
     }
   }
   h2 {
