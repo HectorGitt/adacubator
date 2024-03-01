@@ -9,6 +9,7 @@ import Banner from "./components/Banner";
 import FlexSection from "./components/FlexSection";
 import second from "../../public/second.png";
 import Footer from "./components/Footer";
+import line from '../../public/lines.svg'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       </FlexSection>
       <FlexSection title="About Us" imgSrc={second} imgAlt="about us" >
         <h1>Our <span className="waivy">Mission</span></h1>
+        <Image className="line" src={line} />
         <p>We believe in the transformative power of Cardano and its ability to redefine the landscape of blockchain technology. That's why AdaCubator is dedicated to providing the necessary capital and resources to the most promising teams venturing into this space. Our goal is to not just fuel your project's journey, but to ensure its sustainable growth and success within the Cardano ecosystem.</p>
       </FlexSection>
       <Features/>
