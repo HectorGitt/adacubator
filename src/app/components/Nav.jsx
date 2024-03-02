@@ -21,7 +21,7 @@ const Nav = () => {
           <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
             <ul className='navlist-pc'>
                 <li><a href='#about'>About</a></li>
-                <li><a href='#misson'>Misson</a></li>
+                <li><a href='#mission'>Mission</a></li>
                 <li><a href='#pitch'>Pitch To Us</a></li>
             </ul>
             {/* <MainButton target className='modal-button' to='/buy' text='Buy CGI' /> */}
@@ -38,7 +38,7 @@ const Nav = () => {
                 </div>
                 <ul>
                     <li onClick={closeNav}><a href='#About'>About</a></li>
-                    <li onClick={closeNav}><a href='#misson'>Misson</a></li>
+                    <li onClick={closeNav}><a href='#mission'>Mission</a></li>
                     <li onClick={closeNav}><a href='#pitch'>Pitch To Us</a></li>
                     <li onClick={closeNav}></li>
                 </ul>
