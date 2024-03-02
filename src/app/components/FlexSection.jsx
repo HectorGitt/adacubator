@@ -4,16 +4,16 @@ import styled from 'styled-components'
 import Image from 'next/image';
 import { device } from '../lib/breakpoint';
 
-const FlexSection = ({text, imgSrc, imgAlt, alternate, children}) => {
+const FlexSection = ({id, text, imgSrc, imgAlt, alternate, children}) => {
   return (
-    <Flex data-aos={alternate? 'fade-up-left':'fade-up-right'} className={alternate? 'alternate':''}>
-        <div>
+    <Flex id={id}  className={alternate? 'alternate':''}>
+        <div data-aos={alternate? 'fade-left':'fade-right'}>
             {children}
             <p>
                 {text}
             </p>
         </div>
-        <div data-aos={alternate? 'fade-up-right':'fade-up-left'} className='image-cont'>
+        <div data-aos={alternate? 'fade-right':'fade-left'} className='image-cont'>
             <Image className='image' src={imgSrc} alt={imgAlt} />
         </div>
         <span className='circle'></span>
