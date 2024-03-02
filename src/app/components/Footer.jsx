@@ -16,7 +16,7 @@ const Footer = () => {
     <FooterCont>
       <div className="footer">
         <div className="footer-left">
-        <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
+        <a href='/' ><Image alt='adacubator logo' src={logo} className="image-logo"/></a>
         <FaFacebookF className="icon1" />
         <FaInstagram className="icon1"/>
         <FaXTwitter className="icon1"/>
@@ -104,22 +104,29 @@ const FooterCont = styled.div`
   }
   @media screen and (${device.md}) {
     & > div {
-        display: flex;
-        justify-content: space-between;
+      display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; 
+    align-items: center;
+        
         margin: 2rem 1rem;
     }
     .icon1{
       margin: 0 1rem;
     }
-    h3 {
-      display: flex;
+    
+    h3{
       align-items: center;
+      display: flex;
       justify-content: center;
+      margin-top: 1.5rem;
     }
     ul {
       font-size: .75rem;
 
     }
+
+  
   }
   
 `
