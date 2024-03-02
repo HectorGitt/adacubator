@@ -8,11 +8,42 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background: #13294E;
+  background: #102242;
   color: white;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+.waivy {
+  background: linear-gradient(107.64deg, #ace1f8 -4.02%, #0098DA 82.79%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #000000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  }
+
+  @keyframes textclip {
+  to {
+      background-position: 200% center;
+  }
+}
+
+.circle{
+  position: absolute;
+  left: 10%;
+  width: 100px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(107.64deg, #4e9aba -4.02%, #017aae 82.79%);
+  filter: blur(100px);
+  transform: translate(-50%, 30%);
+  z-index: 1;
 }

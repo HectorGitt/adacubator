@@ -16,7 +16,7 @@ const Footer = () => {
     <FooterCont>
       <div className="footer">
         <div className="footer-left">
-        <a href='/' ><Image alt='adacubator logo' src={logo} className="image-logo"/></a>
+        <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
         <FaFacebookF className="icon1" />
         <FaInstagram className="icon1"/>
         <FaXTwitter className="icon1"/>
@@ -24,8 +24,8 @@ const Footer = () => {
 
 
         </div>
-        <div className="footer-right">
-            <h3>Quick Links</h3>
+        <div data-aos-offset={0} data-aos='fade-left' className="footer-right">
+            <h3 className="waivy">Quick Links</h3>
             <ul className="list">
                 <li>About Us</li>
                 <li>Coaches</li>
@@ -36,10 +36,9 @@ const Footer = () => {
             </ul>
         </div>
         </div>
-        <div className="line">
-
+        <div data-aos-offset={0} data-aos='zoom-in' className="line">
         </div>
-        <p>© 2024.All rights reserved</p>
+        <p data-aos-offset={0} data-aos='zoom-in'>&copy; 2024.All rights reserved</p>
     </FooterCont>
   )
 }
@@ -51,10 +50,10 @@ const FooterCont = styled.div`
     & > div {
         display: flex;
         justify-content: space-between;
-        margin: 3rem 8rem;
+        margin: 3rem 4rem;
     }
     .icon1{
-      margin: 0 2rem ;
+      margin: 0 1rem ;
       width: 1.5rem;
       height: 1.5rem;
       background-color: honeydew;
@@ -66,10 +65,6 @@ const FooterCont = styled.div`
    
     }
    h3{
-        background: linear-gradient(107.64deg, #0098DA -4.02%, #91D8F7 82.79%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         margin-bottom: .5rem;
     }
    
@@ -77,7 +72,7 @@ const FooterCont = styled.div`
    ul{
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     }
 
     .line {

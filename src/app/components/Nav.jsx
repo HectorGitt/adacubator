@@ -16,37 +16,39 @@ const Nav = () => {
     setNav(false);
   };
   return (
-    <NavBar>
-        <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
-        <ul className='navlist-pc'>
-            <li><a href='#about'>About</a></li>
-            <li><a href='#misson'>Misson</a></li>
-            <li><a href='#pitch'>Pitch To Us</a></li>
-        </ul>
-        {/* <MainButton target className='modal-button' to='/buy' text='Buy CGI' /> */}
-        <Button text='Contact Us' target to='/buy' />
-        
-        <CgMenu onClick={toggleNav} className='menu-button' id='menu' size='4rem' />
-        
-
-        <div className={nav? 'navlist navlist-mobile': 'navlist'}>
-            <div className='top-mobile'>
-                <Image alt='CardanoGPT logo' src={logo}/>
-                <IoCloseCircleOutline onClick={closeNav} 
-                className='menu-button-mobile' id='menu' size='4rem' />
-            </div>
-            <ul>
-                <li onClick={closeNav}><a href='#About'>About</a></li>
-                <li onClick={closeNav}><a href='#misson'>Misson</a></li>
-                <li onClick={closeNav}><a href='#pitch'>Pitch To Us</a></li>
-                <li onClick={closeNav}></li>
+    <NavBar >
+        <nav>
+          <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
+            <ul className='navlist-pc'>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#misson'>Misson</a></li>
+                <li><a href='#pitch'>Pitch To Us</a></li>
             </ul>
-            {/* <Popup trigger={<button className='modal-button'>Buy CGI</button>} position="right center" modal>
-            <div className='popup'>Coming Soon!!</div>
-            </Popup> */}
-            {/* <MainButton target to='/buy' text='Buy CGI' /> */}
-        </div>
+            {/* <MainButton target className='modal-button' to='/buy' text='Buy CGI' /> */}
+            <Button text='Contact Us' target to='/buy' />
+            
+            <CgMenu onClick={toggleNav} className='menu-button' id='menu' size='4rem' />
+            
 
+            <div className={nav? 'navlist navlist-mobile': 'navlist'}>
+                <div className='top-mobile'>
+                    <Image alt='adacubator logo' src={logo}/>
+                    <IoCloseCircleOutline onClick={closeNav} 
+                    className='menu-button-mobile' id='menu' size='4rem' />
+                </div>
+                <ul>
+                    <li onClick={closeNav}><a href='#About'>About</a></li>
+                    <li onClick={closeNav}><a href='#misson'>Misson</a></li>
+                    <li onClick={closeNav}><a href='#pitch'>Pitch To Us</a></li>
+                    <li onClick={closeNav}></li>
+                </ul>
+                {/* <Popup trigger={<button className='modal-button'>Buy CGI</button>} position="right center" modal>
+                <div className='popup'>Coming Soon!!</div>
+                </Popup> */}
+                {/* <MainButton target to='/buy' text='Buy CGI' /> */}
+            </div>  
+        </nav>
+        <hr data-aos='zoom-in' />
     </NavBar>
   )
 }
@@ -54,15 +56,28 @@ const Nav = () => {
 export default Nav
 
 const NavBar = styled.nav`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    hr {
+        width: 90%;
+    }
     .menu-button {
         display: none;
     }
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1%;
-    border-bottom: 1px solid #5d6a81;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1%;
+        width: 90%;
+        z-index: 100;
+    }
+    hr {
+        height: 1px;
+    }
     ul {
         display: flex;
         justify-content: space-between;
@@ -83,7 +98,7 @@ const NavBar = styled.nav`
         z-index: 100;
         padding: 2%;
         ul{
-            width: 100%;
+            width: 90%;
             display: flex;
             flex-direction: column;
             text-align: start;
@@ -108,6 +123,7 @@ const NavBar = styled.nav`
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        padding: 0 5%;
     }
     @media screen and (${device.md}) {
         .navlist-pc, button {
