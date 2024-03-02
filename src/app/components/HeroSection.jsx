@@ -44,7 +44,7 @@ const Hero = styled.div`
         }
     }
     button {
-        align-self: center;
+        align-self: self-start;
     }
     & > div {
         display: flex;
@@ -56,6 +56,9 @@ const Hero = styled.div`
         z-index: 2;
     }
     @media screen and (${device.md}) {
+    button {
+        align-self: center;
+    }
       margin: 0 10px;
       flex-direction: column;
       align-items: center;
