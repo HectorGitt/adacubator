@@ -119,15 +119,15 @@ const FooterCont = styled.div`
       display: flex;
       justify-content: center;
       margin-top: 1.5rem;
+      font-size: 1.5rem;
     }
     ul {
-      font-size: .75rem;
+      font-size: 1.3rem;
       display: block;
-      gap: 1rem;
 
     }
     li{
-      margin-top: .5rem;
+      margin-top: 1rem;
       align-items: center;
       justify-content: center;
       display: flex;
