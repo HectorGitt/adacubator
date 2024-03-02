@@ -105,7 +105,7 @@ const FooterCont = styled.div`
   @media screen and (${device.md}) {
     & > div {
       display: flex;
-    flex-direction: column; /* Stacks items vertically */
+    flex-direction: column; 
     justify-content: center; 
     align-items: center;
         
