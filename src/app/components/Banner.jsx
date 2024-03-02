@@ -8,7 +8,7 @@ import borderBox from '../../../public/banner_border.svg'
 
 const Banner = () => {
   return (
-    <BannerCont>
+    <BannerCont id="pitch">
       <div>
         <h2 data-aos='zoom-in'>Pitch to <span className="waivy">Us</span></h2>
         <p data-aos='fade-up'>If you&lsquo;re building a project on Cardano and believe in making a difference, AdaCubator is your ideal partner. Together, we can push the boundaries of what&lsquo;s possible and shape the future of blockchain technology.</p>
@@ -44,11 +44,11 @@ const BannerCont = styled.div`
     p {
       max-width: 50%;
       margin: 1rem 0;
-      z-index: 1;
+      z-index: 2;
     }
     button {
       align-self: self-start;
-      z-index: 1;
+      z-index: 2;
     }
   }
   h2 {
@@ -62,7 +62,7 @@ const BannerCont = styled.div`
   .wavelines {
     position: absolute;
     top: -50%;
-    z-index: 1;
+    
   }
   .banner-border {
     position: absolute;
