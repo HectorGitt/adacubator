@@ -16,10 +16,14 @@ const Footer = () => {
     <FooterCont>
       <div className="footer">
         <div className="footer-left">
+          <div>
         <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
+        </div>
+        <div className="icons">
         <FaFacebookF className="icon1" />
         <FaInstagram className="icon1"/>
         <FaXTwitter className="icon1"/>
+        </div>
 
 
 
@@ -118,7 +122,21 @@ const FooterCont = styled.div`
     }
     ul {
       font-size: .75rem;
+      display: block;
+      gap: 1rem;
 
+    }
+    li{
+      margin-top: .5rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+    .icons{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-top: .5rem;
     }
 
   
