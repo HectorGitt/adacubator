@@ -18,7 +18,7 @@ const ShowcaseCont = styled.div`
   position: relative;
   text-align: center;
   min-height: 150px;
-  margin: 4rem 0;
+  margin: 4rem 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
