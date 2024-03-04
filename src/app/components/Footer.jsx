@@ -6,28 +6,21 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { device } from '../lib/breakpoint';
 
-
-
-
-
-
 const Footer = () => {
   return (
     <FooterCont>
       <div className="footer">
         <div className="footer-left">
           <div>
-        <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
+            <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
+          </div>
+          <div className="icons">
+            <FaFacebookF className="icon1" />
+            <FaInstagram className="icon1"/>
+            <FaXTwitter className="icon1"/>
+          </div>
         </div>
-        <div className="icons">
-        <FaFacebookF className="icon1" />
-        <FaInstagram className="icon1"/>
-        <FaXTwitter className="icon1"/>
-        </div>
-
-
-
-        </div>
+        
         <div data-aos-offset={0} data-aos='fade-left' className="footer-right">
             <h3 className="waivy">Quick Links</h3>
             <ul className="list">
@@ -49,8 +42,9 @@ const Footer = () => {
 
 export default Footer
 
-const FooterCont = styled.div`
-  
+const FooterCont = styled.footer`
+    background-color: #13255390;
+    padding: 1rem 0;
     & > div {
         display: flex;
         justify-content: space-between;
@@ -83,7 +77,7 @@ const FooterCont = styled.div`
       position: relative;
     width: auto; 
     height: 1px; 
-    background-color: #E8E8E880; 
+    background-color: #e8e8e82b; 
     }
     .line::before {
     content: '';
@@ -99,7 +93,6 @@ const FooterCont = styled.div`
     display: flex;
     justify-content: center;
     margin-top: -1rem;
-    margin-bottom: 2rem;
   }
   @media screen and (${device.md}) {
     & > div {
