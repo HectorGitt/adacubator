@@ -43,6 +43,7 @@ const Flex = styled.div`
         width: 100%;
         margin: 0 4rem;
         flex: 1;
+        z-index: 2;
     }
     &.alternate {
         flex-direction: row-reverse;

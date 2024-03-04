@@ -49,6 +49,7 @@ const FooterCont = styled.footer`
         display: flex;
         justify-content: space-between;
         margin: 3rem 4rem;
+        z-index: 2;
     }
     .icon1{
       margin: 0 1rem ;

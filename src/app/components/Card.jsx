@@ -26,7 +26,7 @@ const CardCont = styled.div`
     max-width: 400px;
     min-height: 250px;
     position: relative;
-    background-color:#11264b ;
+    background-color:#11264bd1 ;
     .icon {
       width: 3rem;
       height: auto;

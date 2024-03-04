@@ -26,6 +26,10 @@ const ShowcaseCont = styled.div`
     font-size: 2.5rem;
     font-weight: 700;
     margin: 2rem 0;
+    z-index: 2;
+  }
+  p {
+    z-index: 2;
   }
   a {
     color: #0098DA;
