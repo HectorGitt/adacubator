@@ -77,13 +77,14 @@ const NavBar = styled.nav`
     }
     hr {
         height: 1px;
+        border: 1px solid #ffffff6f;
     }
     ul {
         display: flex;
         justify-content: space-between;
         list-style: none;
         color: white;
-        min-width: 35%;
+        min-width: 18rem;
         gap: 0.5rem;
     }
     .navlist-mobile {
