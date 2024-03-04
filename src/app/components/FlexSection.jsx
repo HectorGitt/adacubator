@@ -31,8 +31,9 @@ const Flex = styled.div`
     gap: 3rem;
     position: relative;
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
+        width: 30rem;
     }
     & > div {
         display: flex;
@@ -52,7 +53,7 @@ const Flex = styled.div`
     }
 
     p {
-      color: #dadada;
+      color: #D2EAF5;
       .white {
         color: white;
       }
