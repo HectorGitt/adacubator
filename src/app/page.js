@@ -27,7 +27,7 @@ export default function Home() {
       <Nav/> 
       <HeroSection />
       <FlexSection id='about' alternate={true} title="About Us" imgSrc={second} imgAlt="about us" >
-        <h1>Accelerate & Boost Your Project on <span className="waivy">Cardano</span></h1>
+        <h1>Accelerate & Boost <br/> Your Project on<br/><span className="waivy">Cardano</span></h1>
         <p>At AdaCubator, we&lsquo;re driven by a singular mission: <span className="white">to accelerate the growth of the Cardano blockchain and its surrounding ecosystems.</span> Our focus is on empowering innovators and entrepreneurs like you, who are at the forefront of building within the Cardano ecosystem.</p>
       </FlexSection>
       <FlexSection id='mission' title="About Us" imgSrc={third} imgAlt="about us" >
