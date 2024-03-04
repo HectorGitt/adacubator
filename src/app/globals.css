@@ -40,11 +40,11 @@ a {
 .circle{
   position: absolute;
   left: 10%;
-  width: 100px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background: linear-gradient(107.64deg, #4e9aba -4.02%, #017aae 82.79%);
-  filter: blur(100px);
+  filter: blur(400px);
   transform: translate(-50%, 30%);
   z-index: 1;
 }
