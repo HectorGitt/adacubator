@@ -32,7 +32,7 @@ const ShowcaseCont = styled.div`
   }
   .circle {
     left: 90%;
-    filter: blur(300px);
+    filter: blur(400px);
     width: 600px;
   }
 
