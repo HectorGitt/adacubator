@@ -32,7 +32,7 @@ const ShowcaseCont = styled.div`
     z-index: 2;
   }
   a {
-    color: #0098DA;
+    font-weight: bolder;
   }
   .circle {
     left: 90%;
