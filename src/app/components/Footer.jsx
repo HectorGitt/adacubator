@@ -66,7 +66,9 @@ const FooterCont = styled.footer`
    h3{
         margin-bottom: .5rem;
     }
-   
+   .footer-left, .footer-right {
+    z-index: 2;
+   }
 
    ul{
     list-style-type: none;
