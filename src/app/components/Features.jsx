@@ -18,7 +18,7 @@ const Features = () => {
             <Card dataAos='fade-left' title='Community Connection' icon={connection} text='Join a network of like-minded developers, entrepreneurs, and enthusiasts all working towards the common goal of advancing the Cardano ecosystem.'/>
         </div>
         <Image className="line" src={line} />
-
+        <div className="circle"></div>
     </FeaturesCont>
   )
 }
@@ -41,8 +41,9 @@ const FeaturesCont = styled.div`
       width: 100%;
       right: 0;
     }
-    h2 {
-      font-size: 2rem;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
     }
     & > div {
         display: flex;
