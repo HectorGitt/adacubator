@@ -41,14 +41,14 @@ const BannerCont = styled.div`
     justify-content: center;
     padding: 2rem;
     min-height: 400px;
+    z-index: 3;
     p {
       max-width: 50%;
-      margin: 1rem 0;
-      z-index: 2;
+      margin: 2rem 0;
+  
     }
     button {
       align-self: self-start;
-      z-index: 2;
     }
   }
   h2 {
