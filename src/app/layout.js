@@ -1,9 +1,8 @@
-import {Inter,  Open_Sans } from "next/font/google";
+import {Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import StyledComponentsRegistry from './lib/registry'
 
-const inter = Inter({ subsets: ["latin"] });
-const openSans = Open_Sans({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"]});
 
 export const metadata = {
   title: "Adacubator",
@@ -13,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={openSans.className}>
+      <body className={spaceGrotesk.className}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>  
       </body>
     </html>
