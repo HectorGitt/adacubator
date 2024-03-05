@@ -48,19 +48,24 @@ const FooterCont = styled.footer`
     & > div {
         display: flex;
         justify-content: space-between;
-        margin: 3rem 4rem;
+        margin: 3rem 5%;
         z-index: 2;
+    }
+    .icons {
+      display: flex;
     }
     .icon1{
       margin: 0 1rem ;
       width: 1.5rem;
       height: 1.5rem;
-      background-color: honeydew;
+      background-color: #ffffff;
       border-radius: 50%;
       color: black;
       padding: 4px;
       font-size: 10px;
       box-shadow: 2px honeydew;
+      /* shadow effect */
+      box-shadow: 0 0 10px 0 #cbdaff;
    
     }
    h3{
@@ -69,11 +74,17 @@ const FooterCont = styled.footer`
    .footer-left, .footer-right {
     z-index: 2;
    }
+   .footer-left {
+    display: flex;
+    gap: 1rem;
+   }
 
    ul{
     list-style-type: none;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    flex: 1;
     }
 
     .line {
@@ -105,6 +116,9 @@ const FooterCont = styled.footer`
     align-items: center;
         
         margin: 2rem 1rem;
+    }
+    .footer-left {
+      flex-direction: column;
     }
     .icon1{
       margin: 0 1rem;
