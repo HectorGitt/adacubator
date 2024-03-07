@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const Features = () => {
   return (
-    <FeaturesCont >
+    <FeaturesCont id='features'>
         <h1 data-aos='zoom-in'>Why <span className='waivy'>Adacubator</span> ?</h1>
         <div className='container'>
             <Card dataAos='fade-right' title='Capital Support' icon={support} text='We provide the financial backing needed to take your project from concept to reality, helping you overcome any financial barriers to entry'/>
