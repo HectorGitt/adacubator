@@ -12,7 +12,7 @@ const Banner = () => {
       <div>
         <h2 data-aos='zoom-in'>Pitch to <span className="waivy">Us</span></h2>
         <p data-aos='fade-up'>If you&lsquo;re building a project on Cardano and believe in making a difference, AdaCubator is your ideal partner. Together, we can push the boundaries of what&lsquo;s possible and shape the future of blockchain technology.</p>
-        <Button dataAos='fade-up' text='Join Us' />
+        <Button dataAos='fade-up' text='Pitch To Us' />
         <div className="banner-img-cont">
         <Image data-aos='fade-up' data-aos-delay={500} className="banner-img" src={rocket} alt='rocket' layout="responsive" />
         </div>
