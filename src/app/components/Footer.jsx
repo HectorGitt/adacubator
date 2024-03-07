@@ -14,22 +14,21 @@ const Footer = () => {
           <div>
             <a href='/' ><Image alt='adacubator logo' src={logo}/></a>
           </div>
-          <div className="icons">
+          {/* <div className="icons">
             <FaFacebookF className="icon1" />
             <FaInstagram className="icon1"/>
             <FaXTwitter className="icon1"/>
-          </div>
+          </div> */}
         </div>
         
         <div data-aos-offset={0} data-aos='fade-left' className="footer-right">
             <h3 className="waivy">Quick Links</h3>
             <ul className="list">
-                <li>About Us</li>
-                <li>Coaches</li>
-                <li>Campuses</li>
-                <li>Tryouts</li>
-                <li>Tournaments</li>
-                <li>News</li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#mission'>Mission</a></li>
+                <li><a href='#features'>Features</a></li>
+                <li><a href='#pitch'>Pitch To Us</a></li>
+                
             </ul>
         </div>
         </div>
