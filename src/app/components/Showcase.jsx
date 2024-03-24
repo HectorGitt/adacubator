@@ -6,7 +6,7 @@ const Showcase = () => {
       <h1 data-aos='zoom-in'>
             Let&lsquo;s <span className='waivy'>Accelerate</span> Your Success <br/>on <span className='waivy'>Cardano</span>
         </h1>
-        <p data-aos='fade-up'>For inquiries, partnership opportunities, or to submit your project for consideration<br/>please contact us at <a className='waivy' href='mailto:info@aducubator.com'>info@aducubator.com</a></p>
+        <p data-aos='fade-up'>For inquiries, partnership opportunities, or to submit your project for consideration<br/>please contact us at <a className='waivy' href='mailto:info@aducubator.com'>info@adacubator.com</a></p>
         <div className='circle'></div>
     </ShowcaseCont>
   )
