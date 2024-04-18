@@ -25,7 +25,7 @@ const Nav = () => {
                 <li><a href='#pitch'>Pitch To Us</a></li>
             </ul>
             {/* <MainButton target className='modal-button' to='/buy' text='Buy CGI' /> */}
-            <Button text='Contact Us' target to='/buy' />
+            <Button text='Contact Us' target to='mailto:info@aducubator.com' />
             
             <CgMenu onClick={toggleNav} className='menu-button' id='menu' size='4rem' />
             
