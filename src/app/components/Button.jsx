@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = ({text, dataAos}) => {
+const Button = ({text, dataAos, to}) => {
   return (
-    <ButtonCont data-aos={dataAos}>
+    <ButtonCont data-aos={dataAos} href={to}>
       {text}
     </ButtonCont>
     )
@@ -18,4 +18,5 @@ const ButtonCont = styled.button`
     border: none;
     border-radius: 21px;
     color: white;
+    cursor: pointer;
 `
