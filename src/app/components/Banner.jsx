@@ -1,29 +1,43 @@
-import Image from "next/image"
-import styled from "styled-components"
-import { device } from "../lib/breakpoint"
-import rocket from '../../../public/rocket.png'
-import wavelines from '../../../public/wavelines.svg'
-import Button from "./Button"
-import borderBox from '../../../public/banner_border.svg'
+import Image from "next/image";
+import styled from "styled-components";
+import { device } from "../lib/breakpoint";
+import rocket from "../../../public/rocket.png";
+import wavelines from "../../../public/wavelines.svg";
+import Button from "./Button";
+import borderBox from "../../../public/banner_border.svg";
 
 const Banner = () => {
   return (
     <BannerCont id="pitch">
       <div>
-        <h2 data-aos='zoom-in'>Pitch to <span className="waivy">Us</span></h2>
-        <p data-aos='fade-up'>If you&lsquo;re building a project on Cardano and believe in making a difference, AdaCubator is your ideal partner. Together, we can push the boundaries of what&lsquo;s possible and shape the future of blockchain technology.</p>
-        <Button dataAos='fade-up' text='Pitch To Us' />
+        <h2 data-aos="zoom-in">
+          Pitch to <span className="waivy">Us</span>
+        </h2>
+        <p data-aos="fade-up">
+          If you&lsquo;re building a project on Cardano and believe in making a
+          difference, AdaCubator is your ideal partner. Together, we can push
+          the boundaries of what&lsquo;s possible and shape the future of
+          blockchain technology.
+        </p>
+        <Button dataAos="fade-up" text="Pitch To Us" />
         <div className="banner-img-cont">
-        <Image data-aos='fade-up' data-aos-delay={500} className="banner-img" src={rocket} alt='rocket' layout="responsive" />
+          <Image
+            data-aos="fade-up"
+            data-aos-delay={500}
+            className="banner-img"
+            src={rocket}
+            alt="rocket"
+            layout="responsive"
+          />
         </div>
       </div>
-      <Image data-aos='fade-up' className="wavelines" src={wavelines} />
-      <Image data-aos='fade-up' className="banner-border" src={borderBox} />
+      <Image data-aos="fade-up" className="wavelines" src={wavelines} />
+      <Image data-aos="fade-up" className="banner-border" src={borderBox} />
     </BannerCont>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
 
 const BannerCont = styled.div`
   position: relative;
@@ -45,7 +59,6 @@ const BannerCont = styled.div`
     p {
       max-width: 50%;
       margin: 2rem 0;
-  
     }
     button {
       align-self: self-start;
@@ -62,7 +75,6 @@ const BannerCont = styled.div`
   .wavelines {
     position: absolute;
     top: -50%;
-    
   }
   .banner-border {
     position: absolute;
@@ -72,9 +84,8 @@ const BannerCont = styled.div`
     z-index: 4;
   }
   @media screen and (${device.md}) {
-      & > div p {
-        max-width: 100%;
-      }
+    & > div p {
+      max-width: 100%;
+    }
   }
-    
-`
+`;

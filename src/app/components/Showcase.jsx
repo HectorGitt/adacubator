@@ -1,18 +1,28 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Showcase = () => {
   return (
     <ShowcaseCont>
-      <h1 data-aos='zoom-in'>
-            Let&lsquo;s <span className='waivy'>Accelerate</span> Your Success <br/>on <span className='waivy'>Cardano</span>
-        </h1>
-        <p data-aos='fade-up'>For inquiries, partnership opportunities, or to submit your project for consideration<br/>please contact us at <a className='waivy' href='mailto:info@aducubator.com'>info@adacubator.com</a></p>
-        <div className='circle'></div>
+      <h1 data-aos="zoom-in">
+        Let&lsquo;s <span className="waivy">Accelerate</span> Your Success{" "}
+        <br />
+        on <span className="waivy">Cardano</span>
+      </h1>
+      <p data-aos="fade-up">
+        For inquiries, partnership opportunities, or to submit your project for
+        consideration
+        <br />
+        please contact us at{" "}
+        <a className="waivy" href="mailto:info@aducubator.com">
+          info@adacubator.com
+        </a>
+      </p>
+      <div className="circle"></div>
     </ShowcaseCont>
-  )
-}
+  );
+};
 
-export default Showcase
+export default Showcase;
 
 const ShowcaseCont = styled.div`
   position: relative;
@@ -39,5 +49,4 @@ const ShowcaseCont = styled.div`
     filter: blur(400px);
     width: 600px;
   }
-
-`
+`;
