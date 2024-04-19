@@ -75,6 +75,7 @@ const BannerCont = styled.div`
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 40%;
   }
   .wavelines {
     position: absolute;
