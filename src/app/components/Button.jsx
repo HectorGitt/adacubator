@@ -11,7 +11,7 @@ const Button = ({ text, dataAos, to }) => {
 
 export default Button;
 
-const ButtonCont = styled.button`
+const ButtonCont = styled.a`
   padding: 14px 28px;
   font-size: 1.2rem;
   background: linear-gradient(107.64deg, #0098da -4.02%, #91d8f7 82.79%);
@@ -19,4 +19,5 @@ const ButtonCont = styled.button`
   border-radius: 21px;
   color: white;
   cursor: pointer;
+  width: fit-content;
 `;

@@ -13,7 +13,7 @@ const Showcase = () => {
         consideration
         <br />
         please contact us at{" "}
-        <a className="waivy" href="mailto:info@aducubator.com">
+        <a className="waivy" href="mailto:info@adacubator.com">
           info@adacubator.com
         </a>
       </p>

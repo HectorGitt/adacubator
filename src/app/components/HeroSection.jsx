@@ -19,7 +19,7 @@ const HeroSection = () => {
             <br />
             <span className="waivy">Cardano</span>
           </h1>
-          <Button text={"Contact Us"} />
+          <Button text={"Contact Us"} to="mailto:info@adacubator.com" />
         </div>
         <div data-aos="fade-right" data-aos-delay={400} className="image-cont">
           <Image src={hero} layout="responsive" />

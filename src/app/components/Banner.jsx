@@ -19,7 +19,11 @@ const Banner = () => {
           the boundaries of what&lsquo;s possible and shape the future of
           blockchain technology.
         </p>
-        <Button dataAos="fade-up" text="Pitch To Us" />
+        <Button
+          dataAos="fade-up"
+          text="Pitch To Us"
+          to="mailto:info@adacubator.com"
+        />
         <div className="banner-img-cont">
           <Image
             data-aos="fade-up"

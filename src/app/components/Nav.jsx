@@ -33,7 +33,7 @@ const Nav = () => {
           </li>
         </ul>
         {/* <MainButton target className='modal-button' to='/buy' text='Buy CGI' /> */}
-        <Button text="Contact Us" target to="mailto:info@aducubator.com" />
+        <Button text="Contact Us" target to="mailto:info@adacubator.com" />
 
         <CgMenu
           onClick={toggleNav}
