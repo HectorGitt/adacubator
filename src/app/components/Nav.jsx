@@ -33,7 +33,12 @@ const Nav = () => {
           </li>
         </ul>
         {/* <MainButton target className='modal-button' to='/buy' text='Buy CGI' /> */}
-        <Button text="Contact Us" target to="mailto:info@adacubator.com" />
+        <Button
+          className="action-button"
+          text="Contact Us"
+          target
+          to="mailto:info@adacubator.com"
+        />
 
         <CgMenu
           onClick={toggleNav}
@@ -67,7 +72,7 @@ const Nav = () => {
           {/* <Popup trigger={<button className='modal-button'>Buy CGI</button>} position="right center" modal>
                 <div className='popup'>Coming Soon!!</div>
                 </Popup> */}
-          {/* <MainButton target to='/buy' text='Buy CGI' /> */}
+          <Button text="Contact Us" target to="mailto:info@adacubator.com" />
         </div>
       </nav>
       <hr data-aos="zoom-in" />
@@ -150,7 +155,7 @@ const NavBar = styled.nav`
   }
   @media screen and (${device.md}) {
     .navlist-pc,
-    button {
+    .action-button {
       display: none;
     }
     .menu-button {
@@ -158,9 +163,6 @@ const NavBar = styled.nav`
     }
     .navlist-mobile {
       display: block;
-    }
-    & > .action-button {
-      display: none;
     }
   }
 `;
