@@ -27,7 +27,6 @@ export default function Home() {
       <FlexSection
         id="about"
         alternate={true}
-        title="About Us"
         imgSrc={second}
         imgAlt="about us"
       >
@@ -46,16 +45,11 @@ export default function Home() {
           are at the forefront of building within the Cardano ecosystem.
         </p>
       </FlexSection>
-      <FlexSection
-        id="mission"
-        title="About Us"
-        imgSrc={third}
-        imgAlt="about us"
-      >
+      <FlexSection id="mission" imgSrc={third} imgAlt="about us">
         <h1>
           Our <span className="waivy">Mission</span>
         </h1>
-        <Image className="line" imgAlt="line" src={line} />
+        <Image className="line" alt="line" src={line} />
         <p>
           We believe in the transformative power of Cardano and its ability to
           redefine the landscape of blockchain technology. That&lsquo;s why

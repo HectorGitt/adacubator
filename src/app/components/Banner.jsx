@@ -35,8 +35,18 @@ const Banner = () => {
           />
         </div>
       </div>
-      <Image data-aos="fade-up" className="wavelines" src={wavelines} />
-      <Image data-aos="fade-up" className="banner-border" src={borderBox} />
+      <Image
+        data-aos="fade-up"
+        className="wavelines"
+        src={wavelines}
+        alt="lines"
+      />
+      <Image
+        data-aos="fade-up"
+        className="banner-border"
+        alt="banner-border"
+        src={borderBox}
+      />
     </BannerCont>
   );
 };

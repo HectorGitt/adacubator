@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = ({ text, dataAos, to }) => {
+const Button = ({ className, text, dataAos, to }) => {
   return (
-    <ButtonCont data-aos={dataAos} href={to}>
+    <ButtonCont className={className} data-aos={dataAos} href={to}>
       {text}
     </ButtonCont>
   );

@@ -34,7 +34,7 @@ const Features = () => {
           text="Join a network of like-minded developers, entrepreneurs, and enthusiasts all working towards the common goal of advancing the Cardano ecosystem."
         />
       </div>
-      <Image className="line" src={line} />
+      <Image className="line" src={line} alt="line" />
       <div className="circle"></div>
     </FeaturesCont>
   );

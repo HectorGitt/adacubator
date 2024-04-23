@@ -22,7 +22,7 @@ const HeroSection = () => {
           <Button text={"Contact Us"} to="mailto:info@adacubator.com" />
         </div>
         <div data-aos="fade-right" data-aos-delay={400} className="image-cont">
-          <Image src={hero} layout="responsive" />
+          <Image src={hero} layout="responsive" alt="earth" />
         </div>
         <span className="circle"></span>
       </div>

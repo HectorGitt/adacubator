@@ -7,10 +7,10 @@ import { device } from "../lib/breakpoint";
 const Card = ({ title, icon, text, dataAos }) => {
   return (
     <CardCont data-aos={dataAos}>
-      <Image className="icon" src={icon} />
+      <Image className="icon" src={icon} alt="waivy icon" />
       <h3 className="waivy">{title}</h3>
       <p>{text}</p>
-      <Image className="card-image" src={cardBox} />
+      <Image className="card-image" alt="card box" src={cardBox} />
     </CardCont>
   );
 };
