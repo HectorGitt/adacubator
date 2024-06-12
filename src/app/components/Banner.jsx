@@ -72,7 +72,7 @@ const BannerCont = styled.div`
 		p {
 			max-width: 50%;
 			margin: 2rem 0;
-			z-index: 3;
+			z-index: 4;
 		}
 		button {
 			align-self: self-start;
@@ -80,7 +80,7 @@ const BannerCont = styled.div`
 	}
 	h2 {
 		font-size: 2.5rem;
-		z-index: 3;
+		z-index: 4;
 	}
 	.banner-img-cont {
 		position: absolute;
